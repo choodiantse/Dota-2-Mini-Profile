@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+}
+
+.topbar{
+  background-color: #342285;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  gap: 15px;
+}
+
+.dp{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.profilename{
+  color: white;
+  font-size: 30px;
+  font-family: Jost;
+  
+}
+
+.country{
+  color: white;
+  font-size: 15px;
+  font-family: Jost;
+}
