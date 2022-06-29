@@ -1,11 +1,12 @@
 .App {
   text-align: center;
+  font-family: Jost;
 }
 
 .topbar{
   background-color: #342285;
   display: flex;
-  padding: 20px;
+  padding: 30px;
   align-items: center;
   gap: 15px;
 }
@@ -24,8 +25,49 @@
   
 }
 
-.country{
+.close{
+  margin-left: auto;
+  fill:white;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+.recentGames{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  
+  width: 300px;
+  margin: 30px;
+  border: 1px solid black;
+}
+
+.recentGamesTitle{
+  width: 300px;
+  height: 40px;
+  margin-top: 0px;
+  padding-top:10px;
+  margin-bottom: 5px;
   color: white;
-  font-size: 15px;
-  font-family: Jost;
+ 
+
+  background-color: rgb(93, 39, 194);
+ 
+}
+.matchInfo{
+  display: grid;
+  grid-template-columns: 40px 60px 60px;
+  align-items: center;
+}
+
+
+
+.winText{
+  color: green;
+  font-weight: 600;
+}
+
+.lossText{
+  color: red;
+  font-weight: 600;
 }
