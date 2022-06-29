@@ -18,14 +18,13 @@ const heroes = Object.values(props.data)
         )
 
         var hero = heroes.filter(hero => hero.id === recent[i].hero_id)
-        console.log(hero)
+
         array.push(
             <div key={recent[i].match_id} className="matchInfo">
                 <img className="icon" src={`http://cdn.dota2.com${hero[0].icon}`} />
                 <p className={win ? "winText" : "lossText"}>
                 {win ? "W" : "L"} </p>
                 <p>{`${recent[i].kills}/${recent[i].deaths}/${recent[i].assists}`}</p>
-                
             </div>
         )
     }
