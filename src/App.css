@@ -1,8 +1,12 @@
 .App {
   text-align: center;
   font-family: Jost;
+  
 }
 
+.stuff{
+  display: flex;
+}
 .topbar{
   background-color: #342285;
   display: flex;
@@ -70,4 +74,43 @@
 .lossText{
   color: red;
   font-weight: 600;
+}
+
+
+.winrateTitle{
+  width: 450px;
+  height: 40px;
+  margin-top: 0px;
+  padding-top:10px;
+  padding-bottom: 13px;
+  margin-bottom: 15px;
+  color: white;
+  background-color: rgb(93, 39, 194);
+ 
+}
+.winrateContainer{
+  width: 450px;
+  height: 200px;
+  margin: 30px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.graph{
+padding-top: 80px;
+ margin-left: -30px;
+}
+
+.graphLine{
+  margin-top: -70px;
+  display: flex;
+  align-items: center;
+}
+
+.wr{
+  margin: 0px;
+ 
 }

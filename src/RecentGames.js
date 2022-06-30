@@ -30,7 +30,7 @@ const heroes = Object.values(props.data)
     }
     return(
         <div className="recentGames">
-            <h3 className="recentGamesTitle">Last 10 Games</h3>
+            <h3 className="recentGamesTitle">Recent Matches</h3>
             {array}
         </div>
     )

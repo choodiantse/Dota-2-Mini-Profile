@@ -5,7 +5,7 @@ export default function Topbar(props){
     
     return(
         <nav className="topbar">
-            <img className="dp" src={info.profile.avatar} />
+            <img className="dp" src={info.profile.avatarfull} />
             <h1 className="profilename">{info.profile.personaname}</h1>
             <img className="close" src="close.svg" />
         </nav>
