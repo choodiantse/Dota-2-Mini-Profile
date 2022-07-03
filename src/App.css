@@ -183,3 +183,46 @@ color: inherit;}
   color: white;
   background-color: rgb(93, 39, 194);
 }
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+.indStats{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 150px 80px 50px;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.stats{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  width: 350px;
+  margin: 30px;
+}
+.statsTitle{
+  width: 100%;
+  height: 40px;
+  margin-top: 0px;
+  padding-top:10px;
+  margin-bottom: 0px;
+  color: white;
+  background-color: rgb(93, 39, 194);
+}
+
+.statName{
+  font-weight: 400;
+ margin-left: auto;
+}
+
+.statNumber{
+  align-self: flex-end;
+}
+
+.statsIcon{
+  align-self: flex-end;
+}
