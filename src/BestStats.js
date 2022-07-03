@@ -54,28 +54,28 @@ export default function BestStats(props){
             <span className="indStats">
                 <h2 className="statName">Highest GPM:</h2>
                 <h2 className="statNumber">{highestGpm[0]}</h2>
-                <img className="icon" src={`http://cdn.dota2.com${highestGpm[3].icon}`} />
+                <img className="statsIcon" src={`http://cdn.dota2.com${highestGpm[3].icon}`} />
             </span>
             <span className="indStats">
                 <h2 className="statName">Highest XPM:</h2>
                 <h2 className="statNumber">{highestXpm[0]}</h2>
-                <img className="icon" src={`http://cdn.dota2.com${highestXpm[3].icon}`} />
+                <img className="statsIcon" src={`http://cdn.dota2.com${highestXpm[3].icon}`} />
             </span>
             <span className="indStats">
                 <h2 className="statName">Most kills: </h2>
                 <h2 className="statNumber">{highestKill[0]}</h2>
-                <img className="icon" src={`http://cdn.dota2.com${highestKill[3].icon}`} />
+                <img className="statsIcon" src={`http://cdn.dota2.com${highestKill[3].icon}`} />
             </span>
             <span className="indStats">
                 <h2 className="statName">Most assists:</h2>
                 <h2 className="statNumber">{highestAssist[0]}</h2>
-                <img className="icon" src={`http://cdn.dota2.com${highestAssist[3].icon}`} />
+                <img className="statsIcon" src={`http://cdn.dota2.com${highestAssist[3].icon}`} />
                 
             </span>
             <span className="indStats">
                 <h2 className="statName">Most last hits:</h2>
                 <h2 className="statNumber">{highestCs[0]}</h2>
-                <img className="icon" src={`http://cdn.dota2.com${highestCs[3].icon}`} />
+                <img className="statsIcon" src={`http://cdn.dota2.com${highestCs[3].icon}`} />
             </span>
             
             

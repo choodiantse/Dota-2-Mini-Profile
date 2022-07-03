@@ -41,7 +41,7 @@ export default function MostPlayed(props){
     heroesPlayed.sort((a,b) => {
         return b.total - a.total
     })
-    console.log(heroesPlayed)
+   
 
    const positive={
         color: "green"
@@ -56,7 +56,7 @@ export default function MostPlayed(props){
         var hero = heroes.filter(hero => hero.id === heroesPlayed[i].id)
         var winrate = Math.round((heroesPlayed[i].wins/heroesPlayed[i].total)*100)
         heroesPlayedDisplay.push(
-            <div id={heroesPlayed[i].id} className="heroWr">
+            <div key={heroesPlayed[i].id} id={heroesPlayed[i].id} className="heroWr">
                 <img className="icon" src={`http://cdn.dota2.com${hero[0].icon}`} />
                 <p style={winrate>=50 ? positive : negative}className="heroIndWr">{heroesPlayed[i].wins} - {heroesPlayed[i].losses}</p>
                 <p>{winrate}%</p>

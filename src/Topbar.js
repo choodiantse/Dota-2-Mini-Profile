@@ -11,7 +11,7 @@ export default function Topbar(props){
             <img className="dp" src={info.profile.avatarfull} />
             <h1 className="profilename">{info.profile.personaname}</h1>
             <img className="medal" src={`medals/SeasonalRank${rankTier===80 ? "Top0" : medal+"-"+star}.webp`} />
-            <img className="close" src="close.svg" />
+            <img  onClick={props.toggleMain} className="close" src="close.png" />
         </nav>
     )
 }

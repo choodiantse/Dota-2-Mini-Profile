@@ -35,6 +35,8 @@
 .close{
   margin-left: auto;
   fill:white;
+  cursor: pointer;
+  color:white;
 }
 
 /*--------------------------------------------------------------------------------------------------------*/
@@ -164,9 +166,10 @@ color: inherit;}
 
 .heroWr{
   padding-top: 8px;
-  display: flex;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: 50px 70px 50px;
   align-items: center;
+  justify-content: center;
 }
 
 .heroIndWr{
@@ -174,6 +177,7 @@ color: inherit;}
   font-size: 20px;
   line-height: 10px;
 }
+
 .heroWrTitle{
   width: 100%;
   height: 40px;
@@ -190,7 +194,7 @@ color: inherit;}
   display: grid;
   align-items: center;
   grid-template-columns: 150px 80px 50px;
-  align-items: center;
+ 
   justify-content: center;
  
 }
@@ -224,5 +228,5 @@ color: inherit;}
 }
 
 .statsIcon{
-  align-self: flex-end;
+  
 }
