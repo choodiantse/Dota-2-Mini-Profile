@@ -20,7 +20,7 @@ const heroes = Object.values(props.data)
         var hero = heroes.filter(hero => hero.id === recent[i].hero_id)
 
         array.push(
-            <a key={recent[i].match_id} href={`https://www.opendota.com/matches/${recent[i].match_id}`}>
+            <a key={recent[i].match_id} href={`https://www.opendota.com/matches/${recent[i].match_id}`} target="_blank">
                 <div  className="matchInfo">
                     <img className="icon" src={`http://cdn.dota2.com${hero[0].icon}`} />
                     <p className={win ? "winText" : "lossText"}>

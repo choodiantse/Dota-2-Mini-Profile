@@ -10,6 +10,7 @@ export default function BestStats(props){
     var highestKill = [0,0,0,""]
     var highestAssist = [0,0,0,""]
     var highestCs = [0,0,0,""]
+    var highestDeath = [0,0,0,""]
     
     for (let i=0; i<recent.length; i++){
         var hero = heroes.filter(hero => hero.id === recent[i].hero_id)
@@ -46,38 +47,61 @@ export default function BestStats(props){
             highestCs[2] = recent[i].hero_id
             highestCs[3] = hero[0]
         }
+
+        if (recent[i].deaths > highestDeath[0]){
+            highestDeath[0] = recent[i].deaths
+            highestDeath[1] = recent[i].match_id
+            highestDeath[2] = recent[i].hero_id
+            highestDeath[3] = hero[0]
+        }
     }
 
     return(
         <div className="stats">
-            <h3 className="statsTitle">Statistics</h3>
-            <span className="indStats">
-                <h2 className="statName">Highest GPM:</h2>
-                <h2 className="statNumber">{highestGpm[0]}</h2>
-                <img className="statsIcon" src={`http://cdn.dota2.com${highestGpm[3].icon}`} />
-            </span>
-            <span className="indStats">
-                <h2 className="statName">Highest XPM:</h2>
-                <h2 className="statNumber">{highestXpm[0]}</h2>
-                <img className="statsIcon" src={`http://cdn.dota2.com${highestXpm[3].icon}`} />
-            </span>
+            <h3 className="statsTitle">Records</h3>
             <span className="indStats">
                 <h2 className="statName">Most kills: </h2>
-                <h2 className="statNumber">{highestKill[0]}</h2>
-                <img className="statsIcon" src={`http://cdn.dota2.com${highestKill[3].icon}`} />
+                <a className="statsLink" href={`https://www.opendota.com/matches/${highestKill[1]}`} target="_blank">
+                    <h2 className="statNumber">{highestKill[0]}</h2>
+                    <img className="statsIcon" src={`http://cdn.dota2.com${highestKill[3].icon}`} />
+                </a>
             </span>
             <span className="indStats">
                 <h2 className="statName">Most assists:</h2>
-                <h2 className="statNumber">{highestAssist[0]}</h2>
-                <img className="statsIcon" src={`http://cdn.dota2.com${highestAssist[3].icon}`} />
-                
+                <a className="statsLink" href={`https://www.opendota.com/matches/${highestAssist[1]}`} target="_blank">
+                    <h2 className="statNumber">{highestAssist[0]}</h2>
+                    <img className="statsIcon" src={`http://cdn.dota2.com${highestAssist[3].icon}`} />
+                </a>
             </span>
             <span className="indStats">
-                <h2 className="statName">Most last hits:</h2>
-                <h2 className="statNumber">{highestCs[0]}</h2>
-                <img className="statsIcon" src={`http://cdn.dota2.com${highestCs[3].icon}`} />
+                <h2 className="statName">Highest GPM:</h2>
+                <a className="statsLink" href={`https://www.opendota.com/matches/${highestGpm[1]}`} target="_blank">
+                    <h2 className="statNumber">{highestGpm[0]}</h2>
+                    <img className="statsIcon" src={`http://cdn.dota2.com${highestGpm[3].icon}`} />
+                </a>
             </span>
-            
+            <span className="indStats">
+                <h2 className="statName">Highest XPM:</h2>
+                <a className="statsLink" href={`https://www.opendota.com/matches/${highestXpm[1]}`} target="_blank">
+                    <h2 className="statNumber">{highestXpm[0]}</h2>
+                    <img className="statsIcon" src={`http://cdn.dota2.com${highestXpm[3].icon}`} />
+                </a>
+            </span>
+           
+            <span className="indStats">
+                <h2 className="statName">Most last hits:</h2>
+                <a className="statsLink" href={`https://www.opendota.com/matches/${highestCs[1]}`} target="_blank">
+                    <h2 className="statNumber">{highestCs[0]}</h2>
+                    <img className="statsIcon" src={`http://cdn.dota2.com${highestCs[3].icon}`} />
+                </a>
+            </span>
+            <span className="indStats">
+                <h2 className="statName">Most deaths:</h2>
+                <a className="statsLink" href={`https://www.opendota.com/matches/${highestDeath[1]}`} target="_blank">
+                    <h2 className="statNumber">{highestDeath[0]}</h2>
+                    <img className="statsIcon" src={`http://cdn.dota2.com${highestDeath[3].icon}`} />
+                </a>
+            </span>
             
            
         </div>
