@@ -61,6 +61,7 @@ export default function BestStats(props){
             <h3 className="statsTitle">Records</h3>
             <span className="indStats">
                 <h2 className="statName">Most kills: </h2>
+        
                 <a className="statsLink" href={`https://www.opendota.com/matches/${highestKill[1]}`} target="_blank">
                     <h2 className="statNumber">{highestKill[0]}</h2>
                     <img className="statsIcon" src={`http://cdn.dota2.com${highestKill[3].icon}`} />

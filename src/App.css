@@ -4,26 +4,39 @@
   
 }
 
-body{
- 
-}
+
 .stuff{
   display: flex;
 }
 
+body{
+ 
+}
 .mainMenu{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  background-color: #f9f5ff;
+  background-position: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position:fixed;
 }
 
 .mainTitle{
   margin-top: 250px;
+  color: white;
+}
+
+.mainErrorMsg{
+  color:white;
+}
+
+.credit{
+  margin-top: auto;
+  font-weight: 400;
+  font-size: 10px;
+  color: white;
 }
 .input{
   width: 300px;
@@ -176,15 +189,17 @@ color: inherit;}
 .graphLine{
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
 .wr{
   margin: 0px;
- 
+ margin-bottom: 10px;
 }
 
 .chart{
   display: flex;
+  margin-bottom: -8px;
 }
 .winRect{
   width: 50px;
@@ -193,6 +208,7 @@ color: inherit;}
   margin-left: 10px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  
 }
 
 .lossRect{

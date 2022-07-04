@@ -32,24 +32,24 @@ export default function Winrate(props){
     }
 
     const winWidth={
-        width: winrate*1.5 + "px"
+        width: winrate*2 + "px"
     }
 
     const lossWidth={
-        width: lossrate*1.5 + "px"
+        width: lossrate*2 + "px"
     }
     
     return(
         <div className="winrateContainer">
             <h3 className="winrateTitle">Winrate</h3>
             <h1 className="wr" style={winrate>=50 ? positive : negative}>{`${winrate}%`}</h1>
-           
-            <div className="graphLine">
-                <h1>{`W:${wins}`}</h1>
-                <span className="chart">
+            <span className="chart">
                     <div style={winWidth} className="winRect"></div>
                     <div style={lossWidth} className="lossRect"></div>
                 </span>
+            <div className="graphLine">
+                <h1>{`W:${wins}`}</h1>
+             
                 <h1>{`L:${losses}`}</h1>
             </div>
         </div>
