@@ -34,11 +34,11 @@ export default function App() {
    // .then(data => setPlayerdata(data))
     
   
-    fetch(`https://api.opendota.com/api/players/${playerId}/recentMatches`)
+    fetch(`https://api.opendota.com/api/players/${playerId}/matches?limit=${numberOfGames}&project=hero_id&project=xp_per_min&project=gold_per_min&project=last_hits&project=kills&project=deaths&project=assists`)
     .then(res => res.json())
     .then(data =>setRecentMatches(data))
     .then(data => console.log("fetched")) }
-  },[main]
+  },[main, numberOfGames]
   )
 
  function toggleMain(){
@@ -56,18 +56,16 @@ export default function App() {
     <div className="App" >
       { main ? <MainMenu toggleMain={toggleMain} setId={setId} errorMsg={errorMsg}/> : 
       playerdata && recentMatches?.length > 0  ? <>
-       <Topbar playerdata={playerdata} toggleMain={toggleMain} />
+       <Topbar playerdata={playerdata} toggleMain={toggleMain} setNumberOfGames={setNumberOfGames}/>
           <div className="stuff">   
               <RecentGames 
               recentMatches={recentMatches} 
-              numberOfGames={numberOfGames}
               data={data} />
 
               <div className="WRandMP">
                 <Winrate recentMatches={recentMatches} />
                 <MostPlayed  
                 recentMatches={recentMatches} 
-                numberOfGames={numberOfGames}
                 data={data} />
               </div>
               <BestStats recentMatches={recentMatches} 
@@ -81,4 +79,3 @@ export default function App() {
 
   );
 }
-
