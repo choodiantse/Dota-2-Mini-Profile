@@ -10,7 +10,7 @@ const heroes = Object.values(props.data)
 
         let win = true
         if ((recent[i].player_slot < 128 && recent[i].radiant_win===true) ||
-            (recent[i].player_slot > 128 && recent[i].radiant_win===false)){
+            (recent[i].player_slot >= 128 && recent[i].radiant_win===false)){
             win = true
         }
         else(
