@@ -19,7 +19,7 @@ export default function MostPlayed(props){
                 countArray[j].total = countArray[j].total+1
 
                 if ((recent[i].player_slot < 128 && recent[i].radiant_win===true) ||
-                (recent[i].player_slot > 128 && recent[i].radiant_win===false)){
+                (recent[i].player_slot >= 128 && recent[i].radiant_win===false)){
                     countArray[j].wins++
                 }
                 else{
@@ -52,7 +52,7 @@ export default function MostPlayed(props){
    }
 
     var heroesPlayedDisplay = []
-    for (let i=0; i<3; i++){
+    for (let i=0; i<heroesPlayed.length; i++){
         var hero = heroes.filter(hero => hero.id === heroesPlayed[i].id)
         var winrate = Math.round((heroesPlayed[i].wins/heroesPlayed[i].total)*100)
         heroesPlayedDisplay.push(
@@ -66,7 +66,8 @@ export default function MostPlayed(props){
     return(
         <div className="heroWrContainer">
             <h3 className="heroWrTitle">Most Played</h3>
-            {heroesPlayedDisplay}
+            <div className="heroWrScrollable"> {heroesPlayedDisplay}</div>
+           
         </div>
     )
 }

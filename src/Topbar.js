@@ -20,7 +20,7 @@ export default function Topbar(props){
             <img className="dp" src={info.profile.avatarfull} />
             <h1 className="profilename">{info.profile.personaname}</h1>
             <img className="medal" src={`medals/SeasonalRank${rankTier===80 ? "Top0" : medal+"-"+star}.webp`} />
-            <input type="text" placeholder="20" onChange={event => handleChange(event)} 
+            <input className="changeLimitInput" type="text" placeholder="Number of games" onChange={event => handleChange(event)} 
                onKeyPress={(event) => {
                 if (!/[0-9]/.test(event.key)) {
                   event.preventDefault();
