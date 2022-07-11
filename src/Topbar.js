@@ -18,15 +18,20 @@ export default function Topbar(props){
     return(
         <nav className="topbar">
             <img className="dp" src={info.profile.avatarfull} />
-            <h1 className="profilename">{info.profile.personaname}</h1>
-            <img className="medal" src={require(`./images/medals/SeasonalRank${rankTier===80 ? "Top0" : medal+"-"+star}.webp`)} />
-            <input className="changeLimitInput" type="text" placeholder="Number of games" onChange={event => handleChange(event)} 
-               onKeyPress={(event) => {
-                if (!/[0-9]/.test(event.key)) {
-                  event.preventDefault();
-                }}}
-                />
-            <button className="changeLimitButton" onClick={handleClick}>Submit</button>
+            <div className="nameAndMedal">
+                <h1 className="profilename">{info.profile.personaname}</h1>
+                <img className="medal" src={require(`./images/medals/SeasonalRank${rankTier===80 ? "Top0" : medal+"-"+star}.webp`)} />
+            </div>
+            <div className="inputAndSubmit">    
+                <input className="changeLimitInput" type="text" placeholder="Number of games" onChange={event => handleChange(event)} 
+                onKeyPress={(event) => {
+                    if (!/[0-9]/.test(event.key)) {
+                    event.preventDefault();
+                    }}}
+                    />
+                <button className="changeLimitButton" onClick={handleClick}>Submit</button>
+            </div>
+        
             <img onClick={props.toggleMain} className="close" src={require("./images/close.png")} />
         </nav>
     )
