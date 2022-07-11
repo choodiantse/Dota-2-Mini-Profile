@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Dota-2-Mini-Profile/static/css/main.ed767938.css",
-    "main.js": "/Dota-2-Mini-Profile/static/js/main.73d9f08d.js",
+    "main.css": "/Dota-2-Mini-Profile/static/css/main.54a725b4.css",
+    "main.js": "/Dota-2-Mini-Profile/static/js/main.78b8c7cd.js",
     "static/js/787.0c3f432a.chunk.js": "/Dota-2-Mini-Profile/static/js/787.0c3f432a.chunk.js",
     "index.html": "/Dota-2-Mini-Profile/index.html",
-    "main.ed767938.css.map": "/Dota-2-Mini-Profile/static/css/main.ed767938.css.map",
-    "main.73d9f08d.js.map": "/Dota-2-Mini-Profile/static/js/main.73d9f08d.js.map",
+    "main.54a725b4.css.map": "/Dota-2-Mini-Profile/static/css/main.54a725b4.css.map",
+    "main.78b8c7cd.js.map": "/Dota-2-Mini-Profile/static/js/main.78b8c7cd.js.map",
     "787.0c3f432a.chunk.js.map": "/Dota-2-Mini-Profile/static/js/787.0c3f432a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed767938.css",
-    "static/js/main.73d9f08d.js"
+    "static/css/main.54a725b4.css",
+    "static/js/main.78b8c7cd.js"
   ]
 }
