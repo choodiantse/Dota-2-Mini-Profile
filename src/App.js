@@ -13,7 +13,7 @@ export default function App() {
   const [playerdata, setPlayerdata] = React.useState()
   const [recentMatches, setRecentMatches] = React.useState()
   const [numberOfGames, setNumberOfGames] = React.useState(30)
-  const [playerId, setPlayerId] = React.useState()
+  const [playerId, setPlayerId] = React.useState(0)
   const [errorMsg, setErrorMsg] = React.useState(false)
   //129050083
   //86747043

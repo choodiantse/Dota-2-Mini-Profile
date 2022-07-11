@@ -19,7 +19,7 @@ export default function Topbar(props){
         <nav className="topbar">
             <img className="dp" src={info.profile.avatarfull} />
             <h1 className="profilename">{info.profile.personaname}</h1>
-            <img className="medal" src={`medals/SeasonalRank${rankTier===80 ? "Top0" : medal+"-"+star}.webp`} />
+            <img className="medal" src={require(`./images/medals/SeasonalRank${rankTier===80 ? "Top0" : medal+"-"+star}.webp`)} />
             <input className="changeLimitInput" type="text" placeholder="Number of games" onChange={event => handleChange(event)} 
                onKeyPress={(event) => {
                 if (!/[0-9]/.test(event.key)) {
@@ -27,7 +27,7 @@ export default function Topbar(props){
                 }}}
                 />
             <button className="changeLimitButton" onClick={handleClick}>Submit</button>
-            <img onClick={props.toggleMain} className="close" src="close.png" />
+            <img onClick={props.toggleMain} className="close" src={require("./images/close.png")} />
         </nav>
     )
 }
