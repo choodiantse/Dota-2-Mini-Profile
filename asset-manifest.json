@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Dota-2-Mini-Profile/static/css/main.3af414f5.css",
-    "main.js": "/Dota-2-Mini-Profile/static/js/main.bfffafbf.js",
+    "main.js": "/Dota-2-Mini-Profile/static/js/main.73c70847.js",
     "static/js/787.0c3f432a.chunk.js": "/Dota-2-Mini-Profile/static/js/787.0c3f432a.chunk.js",
     "static/media/SeasonalRankTop0.webp": "/Dota-2-Mini-Profile/static/media/SeasonalRankTop0.e411016aa2f892251820.webp",
     "static/media/SeasonalRank5-3.webp": "/Dota-2-Mini-Profile/static/media/SeasonalRank5-3.cd9896a03133696a7f81.webp",
@@ -42,11 +42,11 @@
     "static/media/SeasonalRank0-0.webp": "/Dota-2-Mini-Profile/static/media/SeasonalRank0-0.b75c6bb061438e28d478.webp",
     "index.html": "/Dota-2-Mini-Profile/index.html",
     "main.3af414f5.css.map": "/Dota-2-Mini-Profile/static/css/main.3af414f5.css.map",
-    "main.bfffafbf.js.map": "/Dota-2-Mini-Profile/static/js/main.bfffafbf.js.map",
+    "main.73c70847.js.map": "/Dota-2-Mini-Profile/static/js/main.73c70847.js.map",
     "787.0c3f432a.chunk.js.map": "/Dota-2-Mini-Profile/static/js/787.0c3f432a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3af414f5.css",
-    "static/js/main.bfffafbf.js"
+    "static/js/main.73c70847.js"
   ]
 }
