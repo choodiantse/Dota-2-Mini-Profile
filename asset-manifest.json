@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/Dota-2-Mini-Profile/static/css/main.bfddae6b.css",
-    "main.js": "/Dota-2-Mini-Profile/static/js/main.73c70847.js",
+    "main.css": "/Dota-2-Mini-Profile/static/css/main.abcb67ca.css",
+    "main.js": "/Dota-2-Mini-Profile/static/js/main.51cc052a.js",
     "static/js/787.0c3f432a.chunk.js": "/Dota-2-Mini-Profile/static/js/787.0c3f432a.chunk.js",
+    "static/media/dota2bg.jpg": "/Dota-2-Mini-Profile/static/media/dota2bg.986594b0dd32fe27be62.jpg",
     "static/media/SeasonalRankTop0.webp": "/Dota-2-Mini-Profile/static/media/SeasonalRankTop0.e411016aa2f892251820.webp",
     "static/media/SeasonalRank5-3.webp": "/Dota-2-Mini-Profile/static/media/SeasonalRank5-3.cd9896a03133696a7f81.webp",
     "static/media/SeasonalRank6-5.webp": "/Dota-2-Mini-Profile/static/media/SeasonalRank6-5.9ee814664e73e0034d18.webp",
@@ -41,12 +42,12 @@
     "static/media/SeasonalRank1-1.webp": "/Dota-2-Mini-Profile/static/media/SeasonalRank1-1.1a2b31ec3f3de219f063.webp",
     "static/media/SeasonalRank0-0.webp": "/Dota-2-Mini-Profile/static/media/SeasonalRank0-0.b75c6bb061438e28d478.webp",
     "index.html": "/Dota-2-Mini-Profile/index.html",
-    "main.bfddae6b.css.map": "/Dota-2-Mini-Profile/static/css/main.bfddae6b.css.map",
-    "main.73c70847.js.map": "/Dota-2-Mini-Profile/static/js/main.73c70847.js.map",
+    "main.abcb67ca.css.map": "/Dota-2-Mini-Profile/static/css/main.abcb67ca.css.map",
+    "main.51cc052a.js.map": "/Dota-2-Mini-Profile/static/js/main.51cc052a.js.map",
     "787.0c3f432a.chunk.js.map": "/Dota-2-Mini-Profile/static/js/787.0c3f432a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfddae6b.css",
-    "static/js/main.73c70847.js"
+    "static/css/main.abcb67ca.css",
+    "static/js/main.51cc052a.js"
   ]
 }
